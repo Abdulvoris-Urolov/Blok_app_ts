@@ -1,0 +1,33 @@
+{
+  "name": "Blok_app_ts",
+  "version": "1.0.0",
+  "description": "1. Run `npm i` command  2. Setup envoirment settings inside `.env` file or `mv .env.example .env` 3. Run `npm run dev` command for development 4. Run `npm run build` command for build application 5. Run `npm run start` command for run application on production",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev ts-node-dev src/index.ts --debug",
+    "start": "node dist/index.js",
+    "build": "tsc -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdulvorisjs/Blok_app_ts.git"
+  },
+  "keywords": [],
+  "author": "Abdulvoris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdulvorisjs/Blok_app_ts/issues"
+  },
+  "homepage": "https://github.com/Abdulvorisjs/Blok_app_ts#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
+  }
+}
