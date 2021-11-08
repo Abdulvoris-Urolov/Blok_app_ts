@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 export default class Database {
-  url: string = process.env.MONGO_URL || "mongodb://localhost: 27017/blog_ts";
+  url: string = process.env.MONGO_URL /*|| "mongodb://localhost: 27017/blog_ts"*/;
 
   connect() {
     return mongoose.connect(
